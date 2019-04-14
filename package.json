@@ -5,10 +5,10 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "jest",
-    "tsc": "tsc",
-    "clean": "rimraf ./dist/*",
+    "clean": "rimraf ./dist",
     "lint": "eslint ./lib --ext .ts",
-    "build": "run-s clean lint test tsc"
+    "build": "run-s clean lint test pack",
+    "pack": "tsc -p ./tsconfig.build.json"
   },
   "repository": {
     "type": "git",
@@ -52,5 +52,8 @@
   },
   "bin": {
     "typed-sf": "./dist/cli.js"
-  }
+  },
+  "files": [
+    "./dist"
+  ]
 }
