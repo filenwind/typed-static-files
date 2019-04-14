@@ -1,0 +1,56 @@
+{
+  "name": "typed-static-files",
+  "version": "1.0.0",
+  "description": "create .d.ts file from static files",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc",
+    "clean": "rimraf ./dist/*",
+    "lint": "eslint ./lib --ext .ts",
+    "build": "run-s clean lint test tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filenwind/typed-static-files.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "filenwind",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filenwind/typed-static-files/issues"
+  },
+  "homepage": "https://github.com/filenwind/typed-static-files#readme",
+  "devDependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/jest": "^24.0.11",
+    "@types/mock-fs": "^3.6.30",
+    "@types/node": "^11.13.4",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "app-root-path": "^2.2.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.1",
+    "jest": "^24.7.1",
+    "mock-fs": "^4.8.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "chokidar": "^2.1.5",
+    "debug": "^4.1.1",
+    "eol": "^0.9.1",
+    "fast-glob": "^2.2.6",
+    "outdent": "^0.7.0",
+    "yargs": "^13.2.2"
+  },
+  "bin": {
+    "typed-sf": "./dist/cli.js"
+  }
+}
