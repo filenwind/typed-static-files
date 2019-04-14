@@ -1,6 +1,6 @@
 {
   "name": "typed-static-files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "create .d.ts file from static files",
   "main": "./dist/index.js",
   "scripts": {
@@ -54,6 +54,6 @@
     "typed-sf": "./dist/cli.js"
   },
   "files": [
-    "./dist"
+    "dist"
   ]
 }
