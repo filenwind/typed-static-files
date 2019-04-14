@@ -14,6 +14,11 @@ npm install typed-static-files
 npx typed-sf -e png,jpg -s ./src/res
 ```
 
+If you have file: `./src/res/test.png`
+
+Will create a declaration file for it: `./src/res/test.png.d.ts`
+
+
 ## Options
 |                | alias | default     | description                                        |
 | -------------- | ----- | ----------- | -------------------------------------------------- |
